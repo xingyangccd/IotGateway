@@ -1,0 +1,176 @@
+<!--
+============================================================
+文件：Views/LoginView.xaml
+用途：登录页面 UI
+     使用 WPF XAML 描述用户界面
+     XAML 是一种声明式语言，用 XML 标签描述 UI 元素
+
+MVVM 数据绑定说明：
+  每个 UI 控件的属性通过 Binding 绑定到 ViewModel 的同名属性
+  例如：Text="{Binding Username}" 表示此 TextBox 的文本
+  与 LoginViewModel.Username 属性双向同步
+
+  方向：
+    View → ViewModel：用户在 TextBox 输入 → ViewModel.Username 自动更新
+    ViewModel → View：ViewModel.Username 变化 → TextBox 自动刷新显示
+============================================================
+-->
+
+<UserControl x:Class="IotGateway.WPF.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Height="400" Width="380"
+             Background="#F5F5F5">
+
+    <!--
+    Grid：网格布局容器
+    定义 6 行（RowDefinitions）+ 2 列（ColumnDefinitions）
+    每个控件通过 Grid.Row 和 Grid.Column 指定位置
+    -->
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>       <!-- 第0行：Logo/标题，高度自适应 -->
+            <RowDefinition Height="Auto"/>       <!-- 第1行：用户名标签 -->
+            <RowDefinition Height="Auto"/>       <!-- 第2行：用户名输入框 -->
+            <RowDefinition Height="Auto"/>       <!-- 第3行：密码标签 -->
+            <RowDefinition Height="Auto"/>       <!-- 第4行：密码输入框 -->
+            <RowDefinition Height="Auto"/>       <!-- 第5行：错误提示 -->
+            <RowDefinition Height="Auto"/>       <!-- 第6行：登录按钮 -->
+            <RowDefinition Height="*"/>          <!-- 第7行：状态栏，填充剩余空间 -->
+        </Grid.RowDefinitions>
+
+        <!-- ============================================ -->
+        <!-- 第0行：应用标题/Logo -->
+        <!-- ============================================ -->
+        <TextBlock Grid.Row="0"
+                   Text="工业物联网管理系统"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Foreground="#1A5276"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,30"/>
+
+        <!-- ============================================ -->
+        <!-- 第1行：用户名标签 -->
+        <!-- ============================================ -->
+        <TextBlock Grid.Row="1"
+                   Text="用户名"
+                   FontSize="14"
+                   Foreground="#333333"
+                   Margin="0,0,0,5"/>
+
+        <!-- ============================================ -->
+        <!-- 第2行：用户名输入框 -->
+        <!-- ============================================ -->
+        <!--
+        Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"
+          解释：
+          - Binding Username：绑定到 ViewModel.Username 属性
+          - UpdateSourceTrigger=PropertyChanged：每次输入一个字符就更新 ViewModel
+            （默认是 LostFocus，即失去焦点才更新）
+          - MaterialDesignTextFieldWithClear：Material Design 风格文本框
+        -->
+        <TextBox Grid.Row="2"
+                 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"
+                 FontSize="14"
+                 Height="35"
+                 Padding="8,5"
+                 BorderBrush="#BDC3C7"
+                 BorderThickness="1"
+                 Background="White"/>
+
+        <!-- ============================================ -->
+        <!-- 第3行：密码标签 -->
+        <!-- ============================================ -->
+        <TextBlock Grid.Row="3"
+                   Text="密码"
+                   FontSize="14"
+                   Foreground="#333333"
+                   Margin="0,15,0,5"/>
+
+        <!-- ============================================ -->
+        <!-- 第4行：密码输入框 -->
+        <!-- ============================================ -->
+        <!--
+        WPF 的 PasswordBox 不直接支持 Binding（安全设计）
+        需要通过附加属性或其他方式绑定
+        这里使用代码后置方式处理密码绑定（见 LoginView.xaml.cs）
+        -->
+        <PasswordBox Grid.Row="4"
+                     x:Name="PasswordBox"
+                     FontSize="14"
+                     Height="35"
+                     Padding="8,5"
+                     BorderBrush="#BDC3C7"
+                     BorderThickness="1"
+                     Background="White"
+                     PasswordChanged="PasswordBox_PasswordChanged"/>
+
+        <!-- ============================================ -->
+        <!-- 第5行：错误提示信息 -->
+        <!-- ============================================ -->
+        <!--
+        Visibility 绑定：
+          使用 BooleanToVisibilityConverter 转换器
+          当 ErrorMessage 不为空时显示，为空时隐藏
+        -->
+        <TextBlock Grid.Row="5"
+                   Text="{Binding ErrorMessage}"
+                   FontSize="12"
+                   Foreground="#E74C3C"
+                   Margin="0,10,0,0"
+                   TextWrapping="Wrap"
+                   Visibility="{Binding ErrorMessage, Converter={StaticResource BoolToVisibility}}"/>
+
+        <!-- ============================================ -->
+        <!-- 第6行：登录按钮 + 加载指示器 -->
+        <!-- ============================================ -->
+        <Grid Grid.Row="6" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>    <!-- 按钮占满整个宽度 -->
+            </Grid.ColumnDefinitions>
+
+            <!-- 登录按钮 -->
+            <!--
+            Command="{Binding LoginCommand}"：
+              点击按钮 → 执行 ViewModel.LoginCommand → 调用 ExecuteLogin 方法
+            IsEnabled：
+              按钮是否可点击，false 时灰色不可点击
+              此处通过 CanExecuteLogin 方法控制
+            -->
+            <Button Grid.Column="0"
+                    Content="登  录"
+                    Command="{Binding LoginCommand}"
+                    IsEnabled="{Binding IsLoading, Converter={StaticResource InverseBool}}"
+                    Height="40"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    Background="#2980B9"
+                    BorderThickness="0"
+                    Cursor="Hand"/>
+
+            <!-- 加载动画（登录中显示） -->
+            <!-- IsLoading=true 时显示旋转的进度环 -->
+            <ProgressBar Grid.Column="0"
+                         IsIndeterminate="True"
+                         Height="4"
+                         VerticalAlignment="Bottom"
+                         Visibility="{Binding IsLoading, Converter={StaticResource BoolToVisibility}}"/>
+        </Grid>
+
+        <!-- ============================================ -->
+        <!-- 第7行：状态栏 -->
+        <!-- ============================================ -->
+        <TextBlock Grid.Row="7"
+                   Text="{Binding StatusText}"
+                   FontSize="11"
+                   Foreground="#7F8C8D"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   Margin="0,15,0,0"/>
+    </Grid>
+</UserControl>

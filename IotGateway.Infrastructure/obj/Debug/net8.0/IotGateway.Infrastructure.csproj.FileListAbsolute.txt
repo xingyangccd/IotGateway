@@ -1,0 +1,17 @@
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/bin/Debug/net8.0/IotGateway.Infrastructure.deps.json
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/bin/Debug/net8.0/IotGateway.Infrastructure.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/bin/Debug/net8.0/IotGateway.Infrastructure.pdb
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/bin/Debug/net8.0/IotGateway.Common.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/bin/Debug/net8.0/IotGateway.Domain.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/bin/Debug/net8.0/IotGateway.Domain.pdb
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/bin/Debug/net8.0/IotGateway.Common.pdb
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/IotGateway.Infrastructure.csproj.AssemblyReference.cache
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/IotGateway.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/IotGateway.Infrastructure.AssemblyInfoInputs.cache
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/IotGateway.Infrastructure.AssemblyInfo.cs
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/IotGateway.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/IotGatew.F976CD8B.Up2Date
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/IotGateway.Infrastructure.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/refint/IotGateway.Infrastructure.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/IotGateway.Infrastructure.pdb
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Infrastructure/obj/Debug/net8.0/ref/IotGateway.Infrastructure.dll

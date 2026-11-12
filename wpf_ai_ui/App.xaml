@@ -1,0 +1,22 @@
+<!--
+============================================================
+文件：App.xaml
+用途：应用资源定义（样式、主题、转换器等）
+
+Prism 模式下，App.xaml 不再设置 StartupUri
+由 Bootstrapper 通过代码创建 Shell
+============================================================
+-->
+
+<prism:PrismApplication
+    x:Class="IotGateway.WPF.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:prism="http://prismlibrary.com/">
+
+    <Application.Resources>
+        <!-- 全局样式和资源在这里定义 -->
+        <!-- 值转换器在 App.xaml.cs 的 OnInitialized() 中通过代码注册 -->
+    </Application.Resources>
+
+</prism:PrismApplication>

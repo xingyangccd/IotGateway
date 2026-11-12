@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uPXGZmdOObc=",
+  "success": true,
+  "projectFilePath": "/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/IotGateway.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/xingyang/.nuget/packages/microsoft.netcore.app.ref/8.0.23/microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
+    "/Users/xingyang/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.23/microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512"
+  ],
+  "logs": []
+}

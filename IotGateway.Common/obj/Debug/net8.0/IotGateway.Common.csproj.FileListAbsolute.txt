@@ -1,0 +1,11 @@
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/bin/Debug/net8.0/IotGateway.Common.deps.json
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/bin/Debug/net8.0/IotGateway.Common.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/bin/Debug/net8.0/IotGateway.Common.pdb
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/obj/Debug/net8.0/IotGateway.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/obj/Debug/net8.0/IotGateway.Common.AssemblyInfoInputs.cache
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/obj/Debug/net8.0/IotGateway.Common.AssemblyInfo.cs
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/obj/Debug/net8.0/IotGateway.Common.csproj.CoreCompileInputs.cache
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/obj/Debug/net8.0/IotGateway.Common.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/obj/Debug/net8.0/refint/IotGateway.Common.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/obj/Debug/net8.0/IotGateway.Common.pdb
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Common/obj/Debug/net8.0/ref/IotGateway.Common.dll

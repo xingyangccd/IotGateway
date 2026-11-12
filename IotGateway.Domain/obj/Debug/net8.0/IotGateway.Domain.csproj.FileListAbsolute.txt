@@ -1,0 +1,11 @@
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/bin/Debug/net8.0/IotGateway.Domain.deps.json
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/bin/Debug/net8.0/IotGateway.Domain.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/bin/Debug/net8.0/IotGateway.Domain.pdb
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/obj/Debug/net8.0/IotGateway.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/obj/Debug/net8.0/IotGateway.Domain.AssemblyInfoInputs.cache
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/obj/Debug/net8.0/IotGateway.Domain.AssemblyInfo.cs
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/obj/Debug/net8.0/IotGateway.Domain.csproj.CoreCompileInputs.cache
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/obj/Debug/net8.0/IotGateway.Domain.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/obj/Debug/net8.0/refint/IotGateway.Domain.dll
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/obj/Debug/net8.0/IotGateway.Domain.pdb
+/Users/xingyang/Documents/上位机课程/wpfxm/wpf_wms/IotGateway.Domain/obj/Debug/net8.0/ref/IotGateway.Domain.dll
